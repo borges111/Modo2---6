@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      login = true;
+      switch (login) {
+        case true:
+          console.log("usuário logado");
+          break;
+        case false:
+          console.log("usuário NÃO logado");
+      }
+      //-------------------------------
+      mes = "Maio";
+      switch (mes) {
+        case "Janeiro":
+        case "Fevereiro":
+        case "Março":
+          console.log("verão!!");
+          break;
+        case "Abril":
+        case "Maio":
+        case "Junho":
+          console.log("Outono!!");
+        //break
+      }
+      //------------------------------
+      cargo = "gerente";
+      salario = parseFloat(2000);
+      switch (cargo) {
+        case "gerente":
+          salario *= 1.1;
+          break;
+        case "supervisor":
+          salario *= 1.15;
+          break;
+        default:
+          salario *= 1.2;
+      }
+      console.log(salario);
+      //-----------------------
+      let idade = 19;
+      if (idade >= 18) {
+        console.log(true);
+      } else {
+        console.log(false);
+      }
+      //--------------
+      let Idade = 10;
+      let podeDirigir = Idade >= 18 ? true : false;
+      console.log(podeDirigir);
+    </script>
+    4
+  </body>
+</html>

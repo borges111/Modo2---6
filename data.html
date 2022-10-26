@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data</title>
+  </head>
+  <body>
+    <script>
+      const hoje = new Date();
+      console.log(hoje.getDate()); //dia
+      console.log(hoje); //
+      console.log(hoje.getDay()); // valor inteiro do dia da semana
+      console.log(hoje.getFullYear()); // ano
+      console.log(hoje.getHours()); // hr
+      console.log(hoje.getMilliseconds()); //seg
+      console.log(hoje.getMinutes()); // minutos
+      console.log(hoje.getMonth() + 1); // mes
+      console.log(hoje.getTime()); // milisegundos desde começo do ano
+
+      const dia = hoje.getDate();
+      const mes = hoje.getMonth() + 1;
+      const ano = hoje.getFullYear();
+      const data = `${dia}/ ${mes} / ${ano}`;
+      console.log(data);
+      document.write(data);
+      //-----------------------
+    </script>
+  </body>
+</html>
